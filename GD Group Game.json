@@ -399,7 +399,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210248,
+        "zoomFactor": 0.4194339782759129,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -572,8 +572,8 @@
           "name": "Point_Green",
           "persistentUuid": "4b4e13d2-8f57-4b60-a317-c3bbedf70f70",
           "width": 0,
-          "x": 374,
-          "y": 416,
+          "x": 633,
+          "y": -334,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -602,6 +602,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "d85d85bdbf3fdb810095bbf0754b1d1843be378bab01c7509ccf0c361d09bf2f",
           "name": "Large_Block_Narrow_Rectangle",
+          "persistentUuid": "109cf16b-36bd-4f2e-b014-8004496ba547",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1800,6 +1801,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Point_Green",
+          "persistentUuid": "c83702a3-9af1-4079-8f78-7da1f90a0418",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2840,6 +2842,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ParticleSystem::EmitterAngle"
+                  },
+                  "parameters": [
+                    "PixelTrail",
+                    "=",
+                    "Player.movementDirection"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
@@ -2848,16 +2860,6 @@
                     "Player.X()",
                     "Player.Y()",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ParticleSystem::EmitterAngle"
-                  },
-                  "parameters": [
-                    "PixelTrail",
-                    "=",
-                    "Player.movementDirection"
                   ]
                 },
                 {
@@ -2936,7 +2938,6 @@
               "comment": "Shadow Trail Dash Effect"
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3011,6 +3012,76 @@
                     "PlayerTrail",
                     "=",
                     "Player.Angle()"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Rotate"
+                      },
+                      "parameters": [
+                        "Player",
+                        "1440",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AdvancedJump::DiveDash::IsDiving"
+                          },
+                          "parameters": [
+                            "Player",
+                            "DiveDash",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Large_Block_Narrow_Rectangle",
+                            "",
+                            "",
+                            "no"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "Player",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3881,6 +3952,17 @@
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "WormBeam",
+                        "\"lifetime\"",
+                        "<",
+                        "0.4"
+                      ]
                     }
                   ],
                   "actions": [
@@ -4551,6 +4633,16 @@
                 },
                 {
                   "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "WormHead",
+                    "=",
+                    "-90"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringObjectVariable"
                   },
                   "parameters": [
@@ -5169,6 +5261,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [],
@@ -5434,7 +5527,209 @@
                   ]
                 }
               ],
-              "actions": []
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "WormHead",
+                        "Point_Green",
+                        "50",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "1100",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "WormHead",
+                        "Point_Green",
+                        "50",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "1100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "1100",
+                        "=",
+                        "600"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "WormHead",
+                        "Point_Green",
+                        "50",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "1100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "600"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "100",
+                        "=",
+                        "600"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "WormHead",
+                        "Point_Green",
+                        "50",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "600"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "Point_Green",
+                        "=",
+                        "100",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -5753,6 +6048,18 @@
                     "BossState",
                     "=",
                     "\"FullScreen\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetXY"
+                  },
+                  "parameters": [
+                    "Point_Green",
+                    "=",
+                    "100",
+                    "=",
+                    "0"
                   ]
                 }
               ]
