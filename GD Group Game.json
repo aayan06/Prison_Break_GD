@@ -109,14 +109,6 @@
         }
       },
       {
-        "file": "cube.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "cube.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/PixelTrail.png",
         "kind": "image",
         "metadata": "",
@@ -133,38 +125,6 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"cube2.png\",\"extension\":\".png\"}",
         "name": "cube2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/cube.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "cube",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/cube2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "cube2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Large Block Narrow Rectangle2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Large Block Narrow Rectangle",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "laserbeam.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "laserbeam.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -193,42 +153,10 @@
         "userAdded": false
       },
       {
-        "file": "../../Downloads/CMPK80-Group-Game-mechanics-aayan/CMPK80-Group-Game-mechanics-aayan/assets/BossProjectile.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "..\\..\\Downloads\\CMPK80-Group-Game-mechanics-aayan\\CMPK80-Group-Game-mechanics-aayan\\assets\\BossProjectile.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "BossProjectile.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "BossProjectile.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "HealthBar_Fill.png",
         "kind": "image",
         "metadata": "",
         "name": "HealthBar_Fill.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "HealthBar_Fill2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "HealthBar_Fill2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "HealthBar_Fill3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "HealthBar_Fill3.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -241,42 +169,10 @@
         "userAdded": false
       },
       {
-        "file": "worm.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "worm.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "worm2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "worm2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "worm3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "worm3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "WormTail.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"WormTail.png\",\"extension\":\".png\"}",
         "name": "WormTail.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "wormHead.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "wormHead.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -304,22 +200,6 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "ChatGPT Image Feb 27, 2026, 04_55_07 AM.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ChatGPT Image Feb 27, 2026, 04_55_07 AM.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -381,6 +261,14 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/NewTiledSprite2.png\"}",
         "name": "NewTiledSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
         "smoothed": true,
         "userAdded": false
       }
@@ -735,15 +623,15 @@
   "variables": [],
   "layouts": [
     {
-      "b": 255,
+      "b": 42,
       "disableInputWhenNotFocused": true,
       "mangledName": "BossFight",
       "name": "BossFight",
-      "r": 247,
+      "r": 34,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 249,
+      "v": 15,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -756,7 +644,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998330085,
+        "zoomFactor": 0.40575189059438943,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -929,25 +817,59 @@
           "name": "Point_Green",
           "persistentUuid": "4b4e13d2-8f57-4b60-a317-c3bbedf70f70",
           "width": 0,
-          "x": 633,
-          "y": -334,
+          "x": 92,
+          "y": 60,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 90,
+          "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1318,
+          "height": 7,
           "keepRatio": true,
           "layer": "",
-          "name": "BlueWall",
-          "persistentUuid": "91f9772c-e323-4f6b-989b-3ac0c58ef3b6",
-          "width": 7,
-          "x": 640,
-          "y": -264,
+          "name": "Platform",
+          "persistentUuid": "5f67309c-bd35-462a-93f6-338c206882f0",
+          "width": 224,
+          "x": -3,
+          "y": 360,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 7,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "69fb1b3f-372c-457f-8eae-fcc0ab488c20",
+          "width": 224,
+          "x": 1021,
+          "y": 363,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 7,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "65292be7-a248-48ff-a13a-3300fee48dd5",
+          "width": 224,
+          "x": 522,
+          "y": 507,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -985,75 +907,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Large Block Narrow Rectangle.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 256
-                          },
-                          {
-                            "x": 0,
-                            "y": 256
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "d85d85bdbf3fdb810095bbf0754b1d1843be378bab01c7509ccf0c361d09bf2f",
-          "name": "BlueWall",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "Jumpthru",
-              "canBeGrabbed": true,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "Large Block Narrow Rectangle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.025,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Large Block Narrow Rectangle",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1596,7 +1449,7 @@
             {
               "name": "Bodies",
               "type": "number",
-              "value": 30
+              "value": 20
             },
             {
               "name": "Speed",
@@ -1962,6 +1815,25 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Platform",
+          "texture": "NewTiledSprite2",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1969,9 +1841,6 @@
         "children": [
           {
             "objectName": "Large_Block_Narrow_Rectangle"
-          },
-          {
-            "objectName": "BlueWall"
           },
           {
             "objectName": "WormBeam"
@@ -2005,6 +1874,9 @@
           },
           {
             "objectName": "Point_Green"
+          },
+          {
+            "objectName": "Platform"
           }
         ]
       },
@@ -5257,7 +5129,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [],
@@ -5523,7 +5394,19 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "WormHead",
+                    "Speed",
+                    "=",
+                    "20"
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -5865,6 +5748,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6395,7 +6279,7 @@
                   },
                   "parameters": [
                     "WormHead",
-                    "BossInvincible",
+                    "AngleToPlayer",
                     "=",
                     "1"
                   ]
@@ -6558,6 +6442,17 @@
                     "PlayerInvincible",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "AdvancedJump::HorizontalDash::IsDashing"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HorizontalDash",
+                    ""
                   ]
                 }
               ],
@@ -6938,7 +6833,7 @@
                   },
                   "parameters": [
                     "WormHead",
-                    "BossInvincible",
+                    "AngleToPlayer",
                     "=",
                     "0"
                   ]
@@ -7000,7 +6895,7 @@
                   },
                   "parameters": [
                     "WormHead",
-                    "BossInvincible",
+                    "AngleToPlayer",
                     "=",
                     "1"
                   ]
@@ -7290,7 +7185,7 @@
                   },
                   "parameters": [
                     "WormHead",
-                    "BossInvincible",
+                    "AngleToPlayer",
                     "=",
                     "1"
                   ]
@@ -7303,7 +7198,7 @@
                   },
                   "parameters": [
                     "WormHead",
-                    "BossInvincible",
+                    "AngleToPlayer",
                     "=",
                     "0"
                   ]
@@ -7468,15 +7363,15 @@
       ]
     },
     {
-      "b": 255,
+      "b": 42,
       "disableInputWhenNotFocused": true,
       "mangledName": "PlatformerSection",
       "name": "PlatformerSection",
-      "r": 247,
+      "r": 34,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 249,
+      "v": 15,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -7489,7 +7384,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373143,
+        "zoomFactor": 0.5290357402156901,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -7518,31 +7413,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 720,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Blackground",
-          "persistentUuid": "3cf7784e-8189-4ad1-a293-3b3851f0453b",
-          "width": 1234,
-          "x": 0,
-          "y": 0,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 6,
           "keepRatio": true,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "d95c4363-e39b-4d41-a059-c98d5a95b073",
-          "width": 1241,
-          "x": -2,
-          "y": 713,
+          "width": 1269,
+          "x": 0,
+          "y": 694,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -7573,7 +7451,7 @@
           "name": "Platform",
           "persistentUuid": "ff3da327-cc5b-427b-92d5-863e696778fc",
           "width": 720,
-          "x": 875,
+          "x": 912,
           "y": 354,
           "zOrder": 2,
           "numberProperties": [],
@@ -7589,7 +7467,7 @@
           "layer": "",
           "name": "Platform",
           "persistentUuid": "46f8f149-8de4-47d2-a13e-e5a205617359",
-          "width": 1230,
+          "width": 1270,
           "x": 3,
           "y": 0,
           "zOrder": 2,
@@ -7606,8 +7484,8 @@
           "name": "NewSprite",
           "persistentUuid": "7e6b42eb-7bae-45a1-9e6b-4c92022d899c",
           "width": 0,
-          "x": 1052,
-          "y": 119,
+          "x": 1112,
+          "y": 116,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -7634,12 +7512,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 5,
+          "height": 9,
           "keepRatio": true,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "53960ecb-3a50-480c-afdd-19d0d610e45b",
-          "width": 214,
+          "width": 248,
           "x": 1019,
           "y": 184,
           "zOrder": 4,
@@ -7663,21 +7541,127 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Hurt",
+          "persistentUuid": "db7bc382-34c6-4082-9390-edb28156147e",
+          "width": 6,
+          "x": 849,
+          "y": 125,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Hurt",
+          "persistentUuid": "8b9cf423-f5da-406f-919b-7866bf6d1b5d",
+          "width": 6,
+          "x": 849,
+          "y": 125,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Hurt",
+          "persistentUuid": "bd86dab6-a262-4366-a893-97884e98d58a",
+          "width": 6,
+          "x": 731,
+          "y": 20,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Hurt",
+          "persistentUuid": "afd3a4d2-2b2b-4e32-b211-40d4ac46487a",
+          "width": 6,
+          "x": 731,
+          "y": 20,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Hurt",
+          "persistentUuid": "b4658434-1f08-48bf-b822-aed34982a915",
+          "width": 6,
+          "x": 983,
+          "y": 198,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Hurt",
+          "persistentUuid": "257e3cef-54f0-4e2d-968c-4c363d6bb5a4",
+          "width": 6,
+          "x": 983,
+          "y": 198,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "81fbc825-9f85-41ac-b53f-b192aee89ad3",
+          "width": 0,
+          "x": 468,
+          "y": 284,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Blackground",
-          "persistentUuid": "cd2e5954-fe0c-49af-813f-944130940a56",
-          "texture": "NewTiledSprite",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
         {
           "assetStoreId": "",
           "height": 32,
@@ -7690,10 +7674,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -7757,19 +7741,128 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Hurt",
+          "persistentUuid": "fb513ae6-5d20-4d22-b040-e264b1f4147c",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText",
+          "persistentUuid": "e2d85e96-d57b-4724-a838-3056eab43594",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "\"Shift\" to dash\n\"Space\" to jump\n\"s\" to fall fast\n\"a, d\" left right\n\"e\" to interact with the portal\n\nDebugging Controls\n\"p\" resets position\n\"z\" zooms out\n\"L\" spawns the boss\n\"I\" spawns laser beams\n\"v\" sets the boss to follow\n\"right click\" sets the boss to follow the mouse\n\"3\" boss circles the screen\n\"2\" boss dashes at the player\n\"o\" orbit the player",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "\"Shift\" to dash\n\"Space\" to jump\n\"s\" to fall fast\n\"a, d\" left right\n\"e\" to interact with the portal\n\nDebugging Controls\n\"p\" resets position\n\"z\" zooms out\n\"L\" spawns the boss\n\"I\" spawns laser beams\n\"v\" sets the boss to follow\n\"right click\" sets the boss to follow the mouse\n\"3\" boss circles the screen\n\"2\" boss dashes at the player\n\"o\" orbit the player",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "Blackground"
-          },
-          {
             "objectName": "Platform"
           },
           {
             "objectName": "NewSprite"
+          },
+          {
+            "objectName": "Hurt"
+          },
+          {
+            "objectName": "NewText"
           }
         ]
       },
@@ -8472,7 +8565,6 @@
               "comment": "PlayerTrail on floor movement"
             },
             {
-              "disabled": true,
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -9395,7 +9487,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Other Stuff"
+          "comment": "The Portal"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -9431,6 +9523,64 @@
                 "",
                 "\"BossFight\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "Hurt",
+                "1080",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Hurt",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AdvancedJump::HorizontalDash::IsDashing"
+              },
+              "parameters": [
+                "Player",
+                "HorizontalDash",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "40",
+                "=",
+                "675"
               ]
             }
           ]
@@ -9563,6 +9713,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "Tween",
