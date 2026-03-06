@@ -1951,7 +1951,7 @@
           "name": "BossHealthBar",
           "persistentUuid": "e3c4b5cf-e132-4482-9110-b84b104f1a6c",
           "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-          "variant": "Green Dot Bar",
+          "variant": "Copper Red Bar",
           "variables": [],
           "effects": [],
           "behaviors": [],
