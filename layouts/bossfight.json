@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7876290101673892,
+    "zoomFactor": 0.5290357402156932,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -286,6 +286,23 @@
       "x": -100,
       "y": 692,
       "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 913,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FadeOut",
+      "persistentUuid": "076de846-4100-4677-a7ce-629007fe2c90",
+      "width": 1862,
+      "x": -173,
+      "y": -126,
+      "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1216,6 +1233,40 @@
         "lineHeight": 0,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "FadeOut",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Progress": 0,
+          "Duration": 0,
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none",
+      "fillColor": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "outlineColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1262,6 +1313,9 @@
       },
       {
         "objectName": "NewText"
+      },
+      {
+        "objectName": "FadeOut"
       }
     ]
   },
@@ -5503,37 +5557,13 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
                 "WormHead",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "WormBody",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "UnloadAllAudio"
-              },
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"IntroTimer\""
+                "Health",
+                "=",
+                "0"
               ]
             }
           ]
@@ -6878,6 +6908,70 @@
         },
         {
           "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"TransitionTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "CameraShake::ShakeCamera"
+          },
+          "parameters": [
+            "",
+            "5",
+            "1",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "BossDefeated",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "FadeOut",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "5",
+            "\"Circular\"",
+            "\"Forward\"",
+            "100",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"TransitionTimer\"",
+            ">=",
+            "5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -7366,6 +7460,10 @@
     {
       "name": "FlashColor",
       "type": "Flash::FlashColor"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
