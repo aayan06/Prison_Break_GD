@@ -1,0 +1,447 @@
+{
+  "b": 0,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "LoreScenePlayer",
+  "name": "LoreScenePlayer",
+  "r": 0,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 0,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.7619362677197602,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "ScrollSpeed",
+      "type": "number",
+      "value": -50
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ReturnButton_Tiled",
+      "persistentUuid": "003d84a4-d43f-46ed-a7ad-53c7835717d0",
+      "width": 33,
+      "x": 51,
+      "y": 52,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 763,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "1b5a3eb3-bc1a-474a-8e41-2768a8ef6d34",
+      "width": 1337,
+      "x": -35,
+      "y": -18,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 227,
+      "keepRatio": true,
+      "layer": "",
+      "name": "PlayerLoreText",
+      "persistentUuid": "e6315eb9-d206-47c3-b3be-297659a0b1b5",
+      "width": 824,
+      "x": 261,
+      "y": 342,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "NewTiledSprite",
+      "texture": "PlayerLore2.JPG",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "cbaf8aa850aaf737b49192ab153ecef910582f6d62ea0390bf26bdd6e60a2db7",
+      "height": 24,
+      "name": "ReturnButton_Tiled",
+      "persistentUuid": "3917d054-9215-4f8d-bbcf-49aafd265de4",
+      "texture": "Return2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 24,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "PlayerLoreText",
+      "persistentUuid": "2d9fc9a2-3ce3-467d-8cb9-f111dcc01e97",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Once a fixer of neither singularity in the Squardoland, Euclidio was a seamless component of the Great Lattice—a world of perfect right angles and absolute predictability. In Squardoland, every entity was a static guardian of symmetry, and \"movement\" was merely a pre-programmed shift between coordinates. As a \"Fixer,\" his only purpose was to smooth out micro-fissures in the geometric ether, ensuring that no shape ever strayed from its Euclidean destiny. \nEuclidio expected long-lasting stability, harmony, and the eternal hum of the Great Lattice. But perfection is a fragile shell. Without warning, the sky of Squardoland didn't just darken—it shattered.\nThe Great Singularity, the silent heart of his world, was breached by the otherworldly nightmare. This was the Worm: a multi-segmented nightmare of shifting angles and jagged hunger that defied every law of Euclidean geometry. With a sound like a thousand funeral knells striking at once, the Devourer began to feast. It didn't just kill; it unmade.\nIn a matter of nanoseconds, the stability Euclidio had spent eons maintaining was dissolved into a chaotic void. His fellow Fixers were crushed under the weight of collapsing barriers, their perfect symmetries ground into meaningless dust and shards of \"time-glass.\" Euclidio watched as the Great Lattice, once his home, his purpose, his very identity, was swallowed whole into the Worm's gullet and soon not observable.\nHe was left floating in the silent, freezing ruins of a dead dimension. But the \"glitch\" that spared him—that jagged shard of forbidden inertia—did something more than just grant him movement. It ignited a spark of Entropy within his geometric core.\nThe harmony is gone. The predictability is dead. Now, the entity formerly known as a Fixer has repurposed his tools for a singular, non-linear objective. His Aether Hook is no longer for repair; it is for pursuit. His dashes are no longer shifts in coordinates; they are strikes of vengeance. He now has a new identity - the Square Vengeance.\nThe Square Vengeance is no longer fixing the world. He is hunting the thing that ate it. Deep within his square-like frame, the logic has been replaced by a cold, calculating fury: \nthe conquer will know the sting of the shards it left behind.\n",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Once a fixer of neither singularity in the Squardoland, Euclidio was a seamless component of the Great Lattice—a world of perfect right angles and absolute predictability. In Squardoland, every entity was a static guardian of symmetry, and \"movement\" was merely a pre-programmed shift between coordinates. As a \"Fixer,\" his only purpose was to smooth out micro-fissures in the geometric ether, ensuring that no shape ever strayed from its Euclidean destiny. \nEuclidio expected long-lasting stability, harmony, and the eternal hum of the Great Lattice. But perfection is a fragile shell. Without warning, the sky of Squardoland didn't just darken—it shattered.\nThe Great Singularity, the silent heart of his world, was breached by the otherworldly nightmare. This was the Worm: a multi-segmented nightmare of shifting angles and jagged hunger that defied every law of Euclidean geometry. With a sound like a thousand funeral knells striking at once, the Devourer began to feast. It didn't just kill; it unmade.\nIn a matter of nanoseconds, the stability Euclidio had spent eons maintaining was dissolved into a chaotic void. His fellow Fixers were crushed under the weight of collapsing barriers, their perfect symmetries ground into meaningless dust and shards of \"time-glass.\" Euclidio watched as the Great Lattice, once his home, his purpose, his very identity, was swallowed whole into the Worm's gullet and soon not observable.\nHe was left floating in the silent, freezing ruins of a dead dimension. But the \"glitch\" that spared him—that jagged shard of forbidden inertia—did something more than just grant him movement. It ignited a spark of Entropy within his geometric core.\nThe harmony is gone. The predictability is dead. Now, the entity formerly known as a Fixer has repurposed his tools for a singular, non-linear objective. His Aether Hook is no longer for repair; it is for pursuit. His dashes are no longer shifts in coordinates; they are strikes of vengeance. He now has a new identity - the Square Vengeance.\nThe Square Vengeance is no longer fixing the world. He is hunting the thing that ate it. Deep within his square-like frame, the logic has been replaced by a cold, calculating fury: \nthe conquer will know the sting of the shards it left behind.\n",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "a0c953acc98a6e9f912f84aafaba610365b1973d33535bc1f2766b22f7c5291d",
+      "height": 33,
+      "name": "PausePlayButton_Tiled",
+      "persistentUuid": "1f4889c0-43ee-4510-a9b1-5a3244594875",
+      "texture": "tiled_Lives big tiled sprite.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 33,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "NewTiledSprite"
+      },
+      {
+        "objectName": "ReturnButton_Tiled"
+      },
+      {
+        "objectName": "PlayerLoreText"
+      },
+      {
+        "objectName": "PausePlayButton_Tiled"
+      }
+    ]
+  },
+  "events": [
+    {
+      "aiGeneratedEventId": "01KK27TDWXZGNSQQ8HBK4HPFD4",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "IsCursorOnObject"
+          },
+          "parameters": [
+            "ReturnButton_Tiled",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PopScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01KK27D9W10X8XD4VQYGC4DNND",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetY"
+          },
+          "parameters": [
+            "PlayerLoreText",
+            "+",
+            "ScrollSpeed * TimeDelta()"
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01KK2AQK41VG4PHZ9JBQR2HJNK",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "IsCursorOnObject"
+          },
+          "parameters": [
+            "PausePlayButton_Tiled",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ScrollSpeed",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ScrollSpeed",
+                "=",
+                "-50"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ScrollSpeed",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "AdvancedJump",
+      "type": "AdvancedJump::AdvancedJump"
+    },
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Bounce",
+      "type": "Bounce::Bounce"
+    },
+    {
+      "name": "DiveDash",
+      "type": "AdvancedJump::DiveDash"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "HorizontalDash",
+      "type": "AdvancedJump::HorizontalDash"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "PlatformerConfigurationStack",
+      "type": "AdvancedJump::PlatformerConfigurationStack"
+    },
+    {
+      "name": "PlatformerObject",
+      "type": "PlatformBehavior::PlatformerObjectBehavior"
+    },
+    {
+      "name": "RemapForPlatformer",
+      "type": "BehaviorRemapper::RemapForPlatformer"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}

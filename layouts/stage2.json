@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.28172599320795877,
+    "zoomFactor": 0.37971210019479734,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -256,8 +256,8 @@
       "name": "BlueDotBar",
       "persistentUuid": "8fcd87d5-cb6f-4c5e-8b7f-962dd47d42cd",
       "width": 0,
-      "x": -484,
-      "y": -367,
+      "x": -604,
+      "y": 975,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -1390,7 +1390,7 @@
             "",
             "1",
             "=",
-            "12"
+            "105"
           ]
         },
         {
@@ -6010,6 +6010,12 @@
             "DiveDash",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -6125,7 +6131,7 @@
       "conditions": [
         {
           "type": {
-            "value": "SoundChannelPlayingOffset"
+            "value": "MusicChannelPlayingOffset"
           },
           "parameters": [
             "",

@@ -153,22 +153,6 @@
         "userAdded": false
       },
       {
-        "file": "HealthBar_Fill.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "HealthBar_Fill.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "NewSprite3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewSprite3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "WormTail.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"WormTail.png\",\"extension\":\".png\"}",
@@ -246,14 +230,6 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewTiledSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/NewTiledSprite.png\"}",
-        "name": "NewTiledSprite",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -371,14 +347,6 @@
         }
       },
       {
-        "file": "C:/aseprite/build/bin/StraightProjectile.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "C:\\aseprite\\build\\bin\\StraightProjectile.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "StraightProjectile2.png",
         "kind": "image",
         "metadata": "",
@@ -387,18 +355,90 @@
         "userAdded": false
       },
       {
-        "file": "StraightProjectile3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "StraightProjectile3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/StraightProjectile3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "StraightProjectile3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "backgroundmainpage2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "backgroundmainpage2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "TitleIconFinal2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TitleIconFinal2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "StartIcon_resized2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "StartIcon_resized2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "IMG_0195.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "IMG_0195.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "TitleIconFinal3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TitleIconFinal3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "IMG_0191_resized2.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "IMG_0191_resized2.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "IMG_0192_resized2.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "IMG_0192_resized2.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "WormLore3.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "WormLore3.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "PlayerLore2.JPG",
+        "kind": "image",
+        "metadata": "",
+        "name": "PlayerLore2.JPG",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Return2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Return2.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -772,6 +812,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/end-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/loresceneboss"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/loresceneplayer"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/mainmenu"
     }
   ],
   "externalEvents": [],

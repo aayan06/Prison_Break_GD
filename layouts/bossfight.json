@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47893418845353314,
+    "zoomFactor": 0.7876290101673892,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -69,8 +69,8 @@
       "name": "Large_Block_Narrow_Rectangle",
       "persistentUuid": "a18d044e-eae7-43e1-b662-893c56371a54",
       "width": 64,
-      "x": 614,
-      "y": -170,
+      "x": 650,
+      "y": -124,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -234,7 +234,7 @@
       "persistentUuid": "991fb7be-36a8-4c8e-a785-29489da28c2d",
       "width": 0,
       "x": 1,
-      "y": 646,
+      "y": 666,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -268,6 +268,24 @@
       "x": 1335,
       "y": 3,
       "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 67,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Platform",
+      "opacity": 128,
+      "persistentUuid": "0f86d9d5-0c09-4566-a648-05d6c6be701b",
+      "width": 1659,
+      "x": -100,
+      "y": 692,
+      "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1097,6 +1115,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "Platform",
+      "persistentUuid": "180009b3-43a7-4f29-a92c-cce8f5d46fac",
       "texture": "NewTiledSprite2",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
@@ -5676,16 +5695,6 @@
             },
             {
               "type": {
-                "value": "AdvancedJump::HorizontalDash::IsDashing"
-              },
-              "parameters": [
-                "Player",
-                "HorizontalDash",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "NumberObjectVariable"
               },
               "parameters": [
@@ -5693,6 +5702,34 @@
                 "BossInvincible",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "AdvancedJump::HorizontalDash::IsDashing"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HorizontalDash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AdvancedJump::DiveDash::IsDiving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DiveDash",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -5958,6 +5995,17 @@
                 "HorizontalDash",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AdvancedJump::DiveDash::IsDiving"
+              },
+              "parameters": [
+                "Player",
+                "DiveDash",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -6191,6 +6239,28 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AdvancedJump::HorizontalDash::IsDashing"
+              },
+              "parameters": [
+                "Player",
+                "HorizontalDash",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AdvancedJump::DiveDash::IsDiving"
+              },
+              "parameters": [
+                "Player",
+                "DiveDash",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -6311,16 +6381,6 @@
           "conditions": [
             {
               "type": {
-                "value": "AdvancedJump::HorizontalDash::IsDashing"
-              },
-              "parameters": [
-                "Player",
-                "HorizontalDash",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -6351,6 +6411,34 @@
                 "BossInvincible",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "AdvancedJump::HorizontalDash::IsDashing"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HorizontalDash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AdvancedJump::DiveDash::IsDiving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DiveDash",
+                    ""
+                  ]
+                }
               ]
             }
           ],
