@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5843784410741041,
+    "zoomFactor": 0.40575189059439043,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -5778,24 +5778,6 @@
             },
             {
               "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "WormHead",
-                "\"255;255;255\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "WormBody",
-                "\"255;255;255\""
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetTimer"
               },
               "parameters": [
@@ -5853,6 +5835,24 @@
                 "",
                 "\"BossInvincTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "WormHead",
+                "\"255;50;50\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "WormBody",
+                "\"255;50;50\""
+              ]
             }
           ]
         },
@@ -5877,8 +5877,8 @@
                 "value": "ChangeColor"
               },
               "parameters": [
-                "WormHead",
-                "\"255;50;50\""
+                "WormBody",
+                "\"255;255;255\""
               ]
             },
             {
@@ -5886,8 +5886,17 @@
                 "value": "ChangeColor"
               },
               "parameters": [
-                "WormBody",
-                "\"255;50;50\""
+                "WormHead",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"HitFlash\""
               ]
             }
           ]

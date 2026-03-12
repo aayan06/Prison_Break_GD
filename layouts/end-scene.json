@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6244537826600003,
+    "zoomFactor": 1.0973679695629526,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -88,9 +88,26 @@
       "name": "RestartPrompt",
       "persistentUuid": "d690b84b-8f57-4649-9215-c159e034e6de",
       "width": 363,
-      "x": 483,
-      "y": 355,
+      "x": 519,
+      "y": 358,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 26,
+      "height": 35,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Unnamed",
+      "persistentUuid": "fca16eae-d40e-4761-a215-974abf85cd27",
+      "width": 347,
+      "x": 457,
+      "y": 356,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -157,13 +174,14 @@
       "bold": false,
       "italic": false,
       "name": "RestartPrompt",
+      "persistentUuid": "b6868ad1-a5ea-441a-9d88-d63ac3b68efd",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Press Space to Play Again\n",
+      "string": "Press to Play Again\n",
       "font": "",
       "textAlignment": "left",
       "characterSize": 25,
@@ -186,7 +204,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Press Space to Play Again\n",
+        "text": "Press to Play Again\n",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -199,6 +217,7 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "NewSprite",
+      "persistentUuid": "4dc126fe-9fe4-4edf-aac3-fa4d32043436",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -254,6 +273,25 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+      "name": "Unnamed",
+      "persistentUuid": "948293c9-4e89-4682-9fa7-6b00d587798a",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "Floating Out Button Dark Blue",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 4,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0,
+        "LabelText": "\n"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -269,6 +307,9 @@
         "objectName": "RestartPrompt"
       },
       {
+        "objectName": "Unnamed"
+      },
+      {
         "objectName": "NewSprite"
       }
     ]
@@ -279,11 +320,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyFromTextPressed"
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
           },
           "parameters": [
-            "",
-            "\"Space\""
+            "Unnamed",
+            ""
           ]
         }
       ],
