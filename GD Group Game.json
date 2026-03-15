@@ -1,5 +1,5 @@
 {
-  "firstLayout": "MainMenu",
+  "firstLayout": "",
   "gdVersion": {
     "build": 261,
     "major": 5,
@@ -121,7 +121,7 @@
         }
       },
       {
-        "file": "cube2.png",
+        "file": "assets/cube2.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"cube2.png\",\"extension\":\".png\"}",
         "name": "cube2.png",
@@ -145,15 +145,7 @@
         "userAdded": false
       },
       {
-        "file": "ChatGPT Image Feb 26, 2026, 01_48_56 AM.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ChatGPT Image Feb 26, 2026, 01_48_56 AM.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "WormTail.png",
+        "file": "assets/WormTail.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"WormTail.png\",\"extension\":\".png\"}",
         "name": "WormTail.png",
@@ -169,7 +161,7 @@
         "userAdded": false
       },
       {
-        "file": "portal.png",
+        "file": "assets/portal.png",
         "kind": "image",
         "metadata": "",
         "name": "portal.png",
@@ -177,7 +169,7 @@
         "userAdded": false
       },
       {
-        "file": "Worm8bit ver2.mp3",
+        "file": "assets/Worm8bit ver2.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Worm8bit ver2.mp3",
@@ -187,7 +179,7 @@
         "userAdded": false
       },
       {
-        "file": "ChatGPT Image Feb 27, 2026, 04_55_07 AM2.png",
+        "file": "assets/ChatGPT Image Feb 27, 2026, 04_55_07 AM2.png",
         "kind": "image",
         "metadata": "",
         "name": "ChatGPT Image Feb 27, 2026, 04_55_07 AM2.png",
@@ -195,7 +187,7 @@
         "userAdded": false
       },
       {
-        "file": "Point Green2.png",
+        "file": "assets/Point Green2.png",
         "kind": "image",
         "metadata": "",
         "name": "Point Green2.png",
@@ -203,7 +195,7 @@
         "userAdded": false
       },
       {
-        "file": "glass shatter 2.mp3",
+        "file": "assets/glass shatter 2.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "glass shatter 2.mp3",
@@ -213,7 +205,7 @@
         "userAdded": false
       },
       {
-        "file": "Freezing magic.mp3",
+        "file": "assets/Freezing magic.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Freezing magic.mp3",
@@ -223,7 +215,7 @@
         "userAdded": false
       },
       {
-        "file": "Fireball magic 2 music.mp3",
+        "file": "assets/Fireball magic 2 music.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Fireball magic 2 music.mp3",
@@ -281,7 +273,7 @@
         "userAdded": false
       },
       {
-        "file": "Worm8bit.mp3",
+        "file": "assets/Worm8bit.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Worm8bit.mp3",
@@ -299,7 +291,7 @@
         "userAdded": false
       },
       {
-        "file": "WormTailPhase2.png",
+        "file": "assets/WormTailPhase2.png",
         "kind": "image",
         "metadata": "",
         "name": "WormTailPhase2.png",
@@ -307,7 +299,7 @@
         "userAdded": false
       },
       {
-        "file": "ExplodingProjectile.png",
+        "file": "assets/ExplodingProjectile.png",
         "kind": "image",
         "metadata": "",
         "name": "ExplodingProjectile.png",
@@ -315,7 +307,7 @@
         "userAdded": false
       },
       {
-        "file": "ExplodingProjectileSingle.png",
+        "file": "assets/ExplodingProjectileSingle.png",
         "kind": "image",
         "metadata": "",
         "name": "ExplodingProjectileSingle.png",
@@ -347,7 +339,7 @@
         }
       },
       {
-        "file": "StraightProjectile2.png",
+        "file": "assets/StraightProjectile2.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"StraightProjectile2.png\",\"extension\":\".png\"}",
         "name": "StraightProjectile2.png",
@@ -363,114 +355,10 @@
         "userAdded": false
       },
       {
-        "file": "winscreen.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "winscreen.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "winscreen2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "winscreen2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "winscreen3.png",
+        "file": "assets/winscreen3.png",
         "kind": "image",
         "metadata": "",
         "name": "winscreen3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "backgroundmainpage2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "backgroundmainpage2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "TitleIconFinal2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "TitleIconFinal2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "StartIcon_resized2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "StartIcon_resized2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "IMG_0195.JPG",
-        "kind": "image",
-        "metadata": "",
-        "name": "IMG_0195.JPG",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "TitleIconFinal3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "TitleIconFinal3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "IMG_0191_resized2.JPG",
-        "kind": "image",
-        "metadata": "",
-        "name": "IMG_0191_resized2.JPG",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "IMG_0192_resized2.JPG",
-        "kind": "image",
-        "metadata": "",
-        "name": "IMG_0192_resized2.JPG",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "WormLore3.JPG",
-        "kind": "image",
-        "metadata": "",
-        "name": "WormLore3.JPG",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "PlayerLore2.JPG",
-        "kind": "image",
-        "metadata": "",
-        "name": "PlayerLore2.JPG",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Return2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Return2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "FallingProjectile.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "FallingProjectile.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -483,7 +371,7 @@
         "userAdded": false
       },
       {
-        "file": "boom2.wav",
+        "file": "assets/boom2.wav",
         "kind": "audio",
         "metadata": "",
         "name": "boom2.wav",
@@ -493,7 +381,7 @@
         "userAdded": false
       },
       {
-        "file": "boom12.wav",
+        "file": "assets/boom12.wav",
         "kind": "audio",
         "metadata": "",
         "name": "boom12.wav",
@@ -919,18 +807,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/end-scene"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/loresceneboss"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/loresceneplayer"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/mainmenu"
     }
   ],
   "externalEvents": [],

@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3325387091250854,
+    "zoomFactor": 0.47893418845353636,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -124,7 +124,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 15,
+      "height": 10,
       "layer": "",
       "name": "Platform",
       "opacity": 128,
