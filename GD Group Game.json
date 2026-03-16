@@ -524,6 +524,36 @@
         "name": "assets\\PlayerLoreSec.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/freesound_community-cork-85200.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "freesound_community-cork-85200.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/existentialtaco-confirm-tap-394001.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "existentialtaco-confirm-tap-394001.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/dragon-studio-bubble-pop-406640.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "dragon-studio-bubble-pop-406640.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },

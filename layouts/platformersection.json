@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.33253870912508493,
+    "zoomFactor": 0.7876290101673961,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -38,8 +38,8 @@
       "name": "Player",
       "persistentUuid": "bfbd3f0b-5616-4b8a-bc32-a0e5dfe2355a",
       "width": 64,
-      "x": 75,
-      "y": 150,
+      "x": 70,
+      "y": 175,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -49,13 +49,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 27,
+      "height": 65,
       "keepRatio": true,
       "layer": "",
       "name": "Platform",
       "persistentUuid": "d95c4363-e39b-4d41-a059-c98d5a95b073",
-      "width": 1269,
-      "x": 0,
+      "width": 1337,
+      "x": -33,
       "y": 694,
       "zOrder": 2,
       "numberProperties": [],
@@ -65,14 +65,14 @@
     {
       "angle": 90,
       "customSize": true,
-      "depth": 0.5620608899297425,
-      "height": 10,
+      "depth": 1,
+      "height": 37,
       "layer": "",
       "name": "Platform",
       "persistentUuid": "b950b019-d334-42d9-a710-3c5916681772",
       "width": 720,
-      "x": -359,
-      "y": 355,
+      "x": -372,
+      "y": 342,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -81,14 +81,14 @@
     {
       "angle": 90,
       "customSize": true,
-      "depth": 0.5620608899297425,
-      "height": 10,
+      "depth": 1,
+      "height": 38,
       "layer": "",
       "name": "Platform",
       "persistentUuid": "ff3da327-cc5b-427b-92d5-863e696778fc",
       "width": 720,
-      "x": 912,
-      "y": 354,
+      "x": 926,
+      "y": 340,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -98,14 +98,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 6,
+      "height": 69,
       "keepRatio": true,
       "layer": "",
       "name": "Platform",
       "persistentUuid": "46f8f149-8de4-47d2-a13e-e5a205617359",
-      "width": 1270,
-      "x": 3,
-      "y": 0,
+      "width": 1340,
+      "x": -32,
+      "y": -63,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -288,8 +288,8 @@
       "name": "NewText",
       "persistentUuid": "81fbc825-9f85-41ac-b53f-b192aee89ad3",
       "width": 0,
-      "x": 987,
-      "y": 577,
+      "x": 1480,
+      "y": 251,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -427,9 +427,9 @@
       "effects": [],
       "behaviors": [
         {
+          "canBeGrabbed": false,
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": true,
           "platformType": "NormalPlatform",
           "yGrabOffset": 0
         }
@@ -613,7 +613,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "\"S\" To dash downwards\n\"Shift\" To dash sideways\n\nDashing allows you to phase through attacks\nMay also allow you to deal damage",
+      "string": "\"S\" To dash downwards\n\"Shift\" To dash sideways\n\nDashing allows you to phase through attacks\nMay also allow you to deal damage\n\nYou get four air jumps\n\nJumping also depends on how long you hold a key\n",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
@@ -636,7 +636,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "\"S\" To dash downwards\n\"Shift\" To dash sideways\n\nDashing allows you to phase through attacks\nMay also allow you to deal damage",
+        "text": "\"S\" To dash downwards\n\"Shift\" To dash sideways\n\nDashing allows you to phase through attacks\nMay also allow you to deal damage\n\nYou get four air jumps\n\nJumping also depends on how long you hold a key\n",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -680,7 +680,6 @@
       "comment": "Player Movement"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -805,15 +804,6 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Space\""
-              ]
-            },
-            {
-              "type": {
                 "value": "NumberObjectVariable"
               },
               "parameters": [
@@ -821,6 +811,32 @@
                 "JumpsLeft",
                 ">",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
               ]
             }
           ],
@@ -832,6 +848,232 @@
               "parameters": [
                 "Player",
                 "PlatformerObject"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Some jump squishing"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleXTween2"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Tween",
+                    "\"jumpSquishX\"",
+                    "0.75",
+                    "\"bounce\"",
+                    "0.12",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleYTween2"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Tween",
+                    "\"jumpStretchY\"",
+                    "1.25",
+                    "\"bounce\"",
+                    "0.12",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Player",
+                        "JumpsLeft",
+                        "=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "existentialtaco-confirm-tap-394001.mp3",
+                        "",
+                        "",
+                        "2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Player",
+                        "JumpsLeft",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "existentialtaco-confirm-tap-394001.mp3",
+                        "",
+                        "",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Player",
+                        "JumpsLeft",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "existentialtaco-confirm-tap-394001.mp3",
+                        "",
+                        "",
+                        "2.2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Player",
+                        "JumpsLeft",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "existentialtaco-confirm-tap-394001.mp3",
+                        "",
+                        "",
+                        "3"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "Player",
+                "Tween",
+                "\"jumpSquishX\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleXTween2"
+              },
+              "parameters": [
+                "Player",
+                "Tween",
+                "\"jumpRecoverX\"",
+                "1",
+                "\"bounce\"",
+                "0.12",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleYTween2"
+              },
+              "parameters": [
+                "Player",
+                "Tween",
+                "\"jumpRecoverY\"",
+                "1",
+                "\"bounce\"",
+                "0.12",
+                "",
+                ""
               ]
             }
           ]
@@ -891,12 +1133,70 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "inverted": true,
+                "value": "SoundPlaying"
               },
-              "parameters": []
+              "parameters": [
+                "",
+                "2"
+              ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "dragon-studio-bubble-pop-406640.wav",
+                "2",
+                "no",
+                "20",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "AdvancedJump::HorizontalDash::IsDashing"
+              },
+              "parameters": [
+                "Player",
+                "HorizontalDash",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AdvancedJump::DiveDash::IsDiving"
+              },
+              "parameters": [
+                "Player",
+                "DiveDash",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FadeSoundVolume"
+              },
+              "parameters": [
+                "",
+                "2",
+                "0",
+                "0.2"
+              ]
+            }
+          ]
         },
         {
           "folded": true,
@@ -956,6 +1256,19 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundOnChannel"
+              },
+              "parameters": [
+                "",
+                "dragon-studio-bubble-pop-406640.wav",
+                "2",
+                "no",
+                "20",
+                "1.2"
+              ]
             }
           ]
         },
@@ -988,11 +1301,28 @@
             },
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "\"Space\""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
               ]
             }
           ],
@@ -1015,20 +1345,37 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Space\""
-              ]
-            },
-            {
-              "type": {
                 "value": "PlatformBehavior::IsJumping"
               },
               "parameters": [
                 "Player",
                 "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
               ]
             }
           ],
@@ -1040,6 +1387,36 @@
               "parameters": [
                 "Player",
                 "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleXTween2"
+              },
+              "parameters": [
+                "Player",
+                "Tween",
+                "\"jumpSquishX\"",
+                "1.25",
+                "\"bounce\"",
+                "0.12",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleYTween2"
+              },
+              "parameters": [
+                "Player",
+                "Tween",
+                "\"jumpStretchY\"",
+                "0.75",
+                "\"bounce\"",
+                "0.12",
+                "",
+                ""
               ]
             }
           ]
@@ -1082,6 +1459,15 @@
                   "parameters": [
                     "",
                     "\"LShift\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
                   ]
                 }
               ]
@@ -1195,6 +1581,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1235,84 +1622,6 @@
         },
         {
           "disabled": true,
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "PlatformBehavior::IsOnFloor"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Player",
-                    "prevSpeed",
-                    ">=",
-                    "75"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Player",
-                    "prevSpeed",
-                    "<=",
-                    "75"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::CurrentSpeed"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "Player",
-                "\"221;0;0\""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1506,15 +1815,6 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"Space\""
-              ]
-            },
-            {
-              "type": {
                 "value": "NumberObjectVariable"
               },
               "parameters": [
@@ -1522,6 +1822,32 @@
                 "JumpsLeft",
                 ">",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
               ]
             }
           ],
@@ -2013,34 +2339,6 @@
           "conditions": [
             {
               "type": {
-                "value": "PlatformBehavior::IsJumping"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "Player",
-                "Scale",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "PlatformBehavior::IsOnFloor"
               },
               "parameters": [
@@ -2229,51 +2527,6 @@
               ]
             }
           ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::IsFalling"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "AdvancedJump::HorizontalDash::IsDashing"
-              },
-              "parameters": [
-                "Player",
-                "HorizontalDash",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "Player",
-                "Scale",
-                "=",
-                "1"
-              ]
-            }
-          ]
         }
       ]
     },
@@ -2393,6 +2646,18 @@
             "75",
             "=",
             "150"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "freesound_community-cork-85200.mp3",
+            "",
+            "",
+            ""
           ]
         }
       ]
