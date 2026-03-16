@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4057518905944159,
+    "zoomFactor": 0.6455105703312012,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -234,7 +234,7 @@
       "name": "TriangleDeath",
       "persistentUuid": "a2ae974a-1d1c-4753-a37c-f9a585dea040",
       "width": 0,
-      "x": 6,
+      "x": 166,
       "y": 6,
       "zOrder": 16,
       "numberProperties": [],
@@ -606,7 +606,7 @@
       "name": "HitCount",
       "persistentUuid": "b7d8c6a2-43c7-4654-aacf-11c573e5cf1c",
       "width": 0,
-      "x": 258,
+      "x": 6,
       "y": 6,
       "zOrder": 17,
       "numberProperties": [],
@@ -2139,6 +2139,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Dash_Text",
+      "persistentUuid": "9400d5c3-6da8-4b51-8cd8-77ed24511652",
+      "width": 0,
+      "x": 6,
+      "y": 222,
+      "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -3166,6 +3182,50 @@
         "lineHeight": 0,
         "color": "194;247;235"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Dash_Text",
+      "persistentUuid": "c45cbb11-722d-4bee-9037-8caf8ab0c2c7",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "\"Shift\" To dash\nBut, try completing this without dashing first",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 235,
+        "g": 247,
+        "r": 194
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "\"Shift\" To dash\nBut, try completing this without dashing first",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "194;247;235"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3200,6 +3260,9 @@
       },
       {
         "objectName": "PortalText"
+      },
+      {
+        "objectName": "Dash_Text"
       },
       {
         "objectName": "TriangleDeath"
@@ -3238,7 +3301,6 @@
       "comment": "Player Movement"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -3672,6 +3734,15 @@
               "parameters": [
                 "Player",
                 "HorizontalDash",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "Dash_Text",
                 ""
               ]
             }
@@ -5161,6 +5232,18 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Spinny Stuff"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -5185,6 +5268,18 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Collisions"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -5282,17 +5377,6 @@
               },
               "parameters": [
                 "HitCount",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Player",
-                "Is_Hit",
-                "True",
                 ""
               ]
             }
@@ -5409,6 +5493,17 @@
                 "=",
                 "150"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "Is_Hit",
+                "True",
+                ""
+              ]
             }
           ]
         }
@@ -5460,14 +5555,6 @@
             "value": "Hide"
           },
           "parameters": [
-            "HitCount"
-          ]
-        },
-        {
-          "type": {
-            "value": "Hide"
-          },
-          "parameters": [
             "CameraMidPoint"
           ]
         },
@@ -5485,6 +5572,27 @@
           },
           "parameters": [
             "PortalText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "Dash_Text"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusicOnChannel"
+          },
+          "parameters": [
+            "",
+            "boons_freak-rasta-8bit-174443.mp3",
+            "3",
+            "20",
+            "20",
+            ""
           ]
         }
       ]

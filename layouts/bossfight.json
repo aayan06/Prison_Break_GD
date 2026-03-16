@@ -5,7 +5,7 @@
   "name": "BossFight",
   "r": 34,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 15,
   "uiSettings": {
@@ -7042,6 +7042,17 @@
           },
           "parameters": [
             "Point_Green"
+          ]
+        },
+        {
+          "type": {
+            "value": "FadeMusicVolume"
+          },
+          "parameters": [
+            "",
+            "10",
+            "0",
+            "3"
           ]
         }
       ]

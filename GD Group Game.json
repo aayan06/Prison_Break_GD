@@ -598,6 +598,36 @@
         "name": "triangle.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/boons_freak-rasta-8bit-174443.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "boons_freak-rasta-8bit-174443.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/musicinmedia-8bit-theme-loop-chiptune-symphony-387749.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "musicinmedia-8bit-theme-loop-chiptune-symphony-387749.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/lesiakower-battle-time-178551.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "lesiakower-battle-time-178551.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
