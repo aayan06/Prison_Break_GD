@@ -97,18 +97,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/Large Block Narrow Rectangle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Large Block Narrow Rectangle.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Rolling Ball Pack/Blocks/9cd15eead3dcc7175b7386671e7c1336f1c6919fee7c806f168705c42ae9ae2b_Large Block Narrow Rectangle.png",
-          "name": "Large Block Narrow Rectangle.png"
-        }
-      },
-      {
         "file": "assets/PixelTrail.png",
         "kind": "image",
         "metadata": "",
@@ -131,7 +119,7 @@
       {
         "file": "assets/cube3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/cube3.png\"}",
         "name": "cube3",
         "smoothed": true,
         "userAdded": false
@@ -235,7 +223,7 @@
       {
         "file": "assets/NewSprite2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite2.png\"}",
         "name": "NewSprite2",
         "smoothed": true,
         "userAdded": false
@@ -554,6 +542,62 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Large Block Narrow Rectangle2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Large Block Narrow Rectangle",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/triangle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "triangle.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -621,6 +665,16 @@
           "name": "Health",
           "type": "number",
           "value": 10
+        },
+        {
+          "name": "Hits_Taken",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Is_Hit",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -929,6 +983,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/platformersection"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/platerformersection2"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

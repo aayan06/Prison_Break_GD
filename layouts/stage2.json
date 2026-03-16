@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47893418845353636,
+    "zoomFactor": 0.2550455473354401,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -3607,7 +3607,6 @@
       "comment": "Boss Spawning"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -3682,7 +3681,7 @@
               "parameters": [
                 "WormHead",
                 "=",
-                "portal.ZOrder()+1"
+                "10"
               ]
             },
             {
@@ -6954,7 +6953,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Attack Scheduling"
+      "comment": "Attack Scheduling (This is a lot of stuff)"
     },
     {
       "folded": true,
@@ -7147,7 +7146,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Generating off a python script (I got tired of manually looking through the waveforms)"
+          "comment": "Generating off a python script (I got tired of manually looking at the timings)"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",

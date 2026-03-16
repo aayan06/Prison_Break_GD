@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6244537826600121,
+    "zoomFactor": 0.5843784410741055,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -69,8 +69,8 @@
       "name": "Large_Block_Narrow_Rectangle",
       "persistentUuid": "a18d044e-eae7-43e1-b662-893c56371a54",
       "width": 64,
-      "x": 650,
-      "y": -124,
+      "x": 645,
+      "y": -146,
       "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
@@ -216,7 +216,7 @@
       "name": "BossHealthBar",
       "persistentUuid": "981001f0-d94c-40ed-bb5d-4d0771c77126",
       "width": 498,
-      "x": 388,
+      "x": 400,
       "y": 48,
       "zOrder": 20,
       "numberProperties": [],
@@ -235,24 +235,6 @@
       "x": 1335,
       "y": 3,
       "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 67,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Platform",
-      "opacity": 128,
-      "persistentUuid": "0f86d9d5-0c09-4566-a648-05d6c6be701b",
-      "width": 1659,
-      "x": -100,
-      "y": 692,
-      "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -296,16 +278,17 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "Large Block Narrow Rectangle",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Large Block Narrow Rectangle.png",
+                  "image": "Large Block Narrow Rectangle",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -791,52 +774,217 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "portal",
+      "persistentUuid": "bb315012-141d-4d0e-81b5-2c825b0b6df2",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
-      "behaviors": [],
+      "effects": [
+        {
+          "effectType": "AdvancedBloom",
+          "name": "Effect",
+          "doubleParameters": {
+            "bloomScale": 1,
+            "blur": 5,
+            "brightness": 0.7,
+            "padding": 0,
+            "quality": 7,
+            "threshold": 0.5
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.15,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "portal.png",
+                  "image": "default",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 32,
-                    "y": 32
+                    "x": 119.5,
+                    "y": 124.5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 119.5,
+                    "y": 124.5
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 48,
+                        "y": 40
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 195,
+                        "y": 40
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 195,
+                        "y": 210
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 48,
+                        "y": 210
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "default2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 210
+                      },
+                      {
+                        "x": 48,
+                        "y": 210
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "default3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 210
+                      },
+                      {
+                        "x": 48,
+                        "y": 210
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "default4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 210
+                      },
+                      {
+                        "x": 48,
+                        "y": 210
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "default5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 119.5,
+                    "y": 124.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 40
+                      },
+                      {
+                        "x": 195,
+                        "y": 210
+                      },
+                      {
+                        "x": 48,
+                        "y": 210
                       }
                     ]
                   ]
@@ -3543,6 +3691,22 @@
       "actions": [
         {
           "type": {
+            "value": "Rotate"
+          },
+          "parameters": [
+            "portal",
+            "360",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
             "value": "SetNumberObjectVariable"
           },
           "parameters": [
@@ -3589,6 +3753,7 @@
           "comment": "Spawning the Boss"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3676,6 +3841,21 @@
                 "SummonBoss",
                 "False",
                 "="
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "portal",
+                "Tween",
+                "\"PortalShrink\"",
+                "0.1",
+                "\"easeInSine\"",
+                "8",
+                "",
+                ""
               ]
             }
           ]
@@ -5205,6 +5385,7 @@
           "comment": "Changing Attack Patterns"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5232,6 +5413,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5259,6 +5441,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5286,6 +5469,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5313,6 +5497,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5328,6 +5513,7 @@
           "actions": []
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5367,6 +5553,7 @@
           "comment": "Manually Controlling the Movements"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5394,6 +5581,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6768,7 +6956,7 @@
                 "",
                 "boom12.wav",
                 "yes",
-                "20",
+                "5",
                 ""
               ]
             }
