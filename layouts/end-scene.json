@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3553434558816992,
+    "zoomFactor": 0.9296875000000019,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -266,7 +266,7 @@
           "type": "Tween::TweenBehavior"
         }
       ],
-      "string": "Credits\n\nGame Made By: \nJonathan, Aayan, Jason\n\nAssets:\n- The worm: Jonathan\n- The player: Jonathan\n  The Rest: (Aayan & Jason)\n+ Gemini\n+ Chatgpt\n\nSounds:\n- Idk\n- End credits music:  Moodmode - Pixabay.com\n- Main menu music:  Musicinmedia - Pixabay.com\n- Platformer stage 1 music: Boons_freak - Pixabay.com\n- Platformer stage 2 music: lesiakower - - Pixabay.com\n- Jumping sound: ExistenialTaco - Pixabay.com\n- Dashing sound: Dragon-studio - Pixabay.com\n- Platformer death sound: FreeSoundCommunity - Pixabay.com\n- Explosion sounds - creatorassets.com\n- The rest of the sounds: Jason\n\nThe end",
+      "string": "Credits\n\nGame Made By: \nJonathan, Aayan, Jason\n\nScenes:\nMain Menu Scene: Jason\nPlatformer Scene: Jonathan\nInitial Boss Stage: Aayan\nSeconday Boss Stage: Jonathan\nEnd Scene: Aayan\n\n\nAssets:\nThe worm: Jonathan\nThe player: Jonathan\nThe Rest: (Aayan & Jason)\n+ Gemini\n+ Chatgpt\n\nMusic:\n- End credits music:  Moodmode - Pixabay.com\n- Main menu music:  Musicinmedia - Pixabay.com\n- Platformer stage 1 music: Boons_freak - Pixabay.com\n- Platformer stage 2 music: lesiakower - - Pixabay.com\n\nSounds:\n- Jumping sound: ExistenialTaco - Pixabay.com\n- Dashing sound: Dragon-studio - Pixabay.com\n- Platformer death sound: FreeSoundCommunity - Pixabay.com\n- Explosion sounds - creatorassets.com\n- The rest of the sounds: Jason\n\nThe end\n\n\"I am never using Gdevelop again\" - Jonathan",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
@@ -289,7 +289,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Credits\n\nGame Made By: \nJonathan, Aayan, Jason\n\nAssets:\n- The worm: Jonathan\n- The player: Jonathan\n  The Rest: (Aayan & Jason)\n+ Gemini\n+ Chatgpt\n\nSounds:\n- Idk\n- End credits music:  Moodmode - Pixabay.com\n- Main menu music:  Musicinmedia - Pixabay.com\n- Platformer stage 1 music: Boons_freak - Pixabay.com\n- Platformer stage 2 music: lesiakower - - Pixabay.com\n- Jumping sound: ExistenialTaco - Pixabay.com\n- Dashing sound: Dragon-studio - Pixabay.com\n- Platformer death sound: FreeSoundCommunity - Pixabay.com\n- Explosion sounds - creatorassets.com\n- The rest of the sounds: Jason\n\nThe end",
+        "text": "Credits\n\nGame Made By: \nJonathan, Aayan, Jason\n\nScenes:\nMain Menu Scene: Jason\nPlatformer Scene: Jonathan\nInitial Boss Stage: Aayan\nSeconday Boss Stage: Jonathan\nEnd Scene: Aayan\n\n\nAssets:\nThe worm: Jonathan\nThe player: Jonathan\nThe Rest: (Aayan & Jason)\n+ Gemini\n+ Chatgpt\n\nMusic:\n- End credits music:  Moodmode - Pixabay.com\n- Main menu music:  Musicinmedia - Pixabay.com\n- Platformer stage 1 music: Boons_freak - Pixabay.com\n- Platformer stage 2 music: lesiakower - - Pixabay.com\n\nSounds:\n- Jumping sound: ExistenialTaco - Pixabay.com\n- Dashing sound: Dragon-studio - Pixabay.com\n- Platformer death sound: FreeSoundCommunity - Pixabay.com\n- Explosion sounds - creatorassets.com\n- The rest of the sounds: Jason\n\nThe end\n\n\"I am never using Gdevelop again\" - Jonathan",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -341,6 +341,14 @@
           "parameters": [
             "",
             "\"BossFight\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "UnloadAllAudio"
+          },
+          "parameters": [
             ""
           ]
         }

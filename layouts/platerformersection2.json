@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7130377630690848,
+    "zoomFactor": 0.5653158055126704,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -151,8 +151,8 @@
       "name": "Im_not_done",
       "persistentUuid": "1240a1e6-59d7-4745-80b9-a9b0e5a2b45b",
       "width": 0,
-      "x": 40,
-      "y": 552,
+      "x": 0,
+      "y": 753,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -1396,8 +1396,8 @@
       "layer": "",
       "name": "Platform",
       "persistentUuid": "17fe0f87-a14d-4758-8fba-4807528255b1",
-      "width": 980,
-      "x": 296,
+      "width": 983,
+      "x": 293,
       "y": 668,
       "zOrder": 2,
       "numberProperties": [],
@@ -1906,23 +1906,6 @@
       "persistentUuid": "ad1b452c-3128-46fe-a726-bbfdcc359b6d",
       "width": 32,
       "x": 1138,
-      "y": 611,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 20,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Triangle",
-      "persistentUuid": "d3164212-243e-4da4-8031-05a541e0a0e2",
-      "width": 32,
-      "x": 1170,
       "y": 611,
       "zOrder": 15,
       "numberProperties": [],
@@ -3672,6 +3655,42 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 36,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DeathRegion3",
+      "opacity": 0,
+      "persistentUuid": "eacd57bd-a02a-4b55-84c8-ffbca862466b",
+      "width": 465,
+      "x": 539,
+      "y": 307,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 167,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DeathRegion3",
+      "opacity": 0,
+      "persistentUuid": "6abedb47-45bd-4f83-8ec5-5cdec1ddac7e",
+      "width": 32,
+      "x": 970,
+      "y": 339,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -4656,6 +4675,67 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "DeathRegion3",
+      "persistentUuid": "a65d0259-5577-4222-a881-65ddb0904a44",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Platform",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4702,6 +4782,9 @@
       },
       {
         "objectName": "DeathRegion2"
+      },
+      {
+        "objectName": "DeathRegion3"
       },
       {
         "objectName": "ProjectileHoming"
@@ -5388,7 +5471,7 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -5397,7 +5480,7 @@
                 },
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -6813,6 +6896,34 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "DeathRegion3",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "death3",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -6969,6 +7080,14 @@
           "parameters": [
             "death2"
           ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "death3"
+          ]
         }
       ]
     },
@@ -7001,24 +7120,23 @@
         },
         {
           "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Player",
-            "Hits_Taken",
-            "+",
-            "1"
-          ]
-        },
-        {
-          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
             "HitCount",
             "Text",
             "=",
-            "\"Hits Taken: \" + Player.Hits_Taken"
+            "\"Hits Taken: \" + HitsTaken"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "HitsTaken",
+            "+",
+            "1"
           ]
         }
       ]

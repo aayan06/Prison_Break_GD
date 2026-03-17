@@ -13,20 +13,20 @@
     "folderProject": true,
     "orientation": "default",
     "packageName": "com.example.gamename",
-    "pixelsRounding": false,
+    "pixelsRounding": true,
     "projectUuid": "55980a9d-61aa-4052-8175-0e83714f8f25",
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "GD Group Game",
+    "name": "Prism Break",
     "description": "Worm Game",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
-    "minFPS": 20,
+    "minFPS": 60,
     "verticalSync": false,
     "platformSpecificAssets": {
       "android-icon-144": "",
@@ -699,11 +699,6 @@
           "value": 10
         },
         {
-          "name": "Hits_Taken",
-          "type": "number",
-          "value": 0
-        },
-        {
           "name": "Is_Hit",
           "type": "boolean",
           "value": false
@@ -994,7 +989,13 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "HitsTaken",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

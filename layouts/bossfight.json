@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4950840073748995,
+    "zoomFactor": 0.7619362677197765,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -252,6 +252,22 @@
       "x": -173,
       "y": -126,
       "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "HitCount",
+      "persistentUuid": "44fe22c4-cf4b-4ee4-ac9e-9eb80f85ab48",
+      "width": 0,
+      "x": 2,
+      "y": 6,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1307,6 +1323,50 @@
         "g": 0,
         "b": 0
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "HitCount",
+      "persistentUuid": "65d79759-2077-45fd-8f2f-946a6a3d267a",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Hits Taken: 0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 235,
+        "g": 247,
+        "r": 194
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Hits Taken: 0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "194;247;235"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1353,6 +1413,9 @@
       },
       {
         "objectName": "FadeOut"
+      },
+      {
+        "objectName": "HitCount"
       }
     ]
   },
@@ -2034,7 +2097,7 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -2043,7 +2106,7 @@
                 },
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -6107,6 +6170,16 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "HitsTaken",
+                "+",
+                "1"
+              ]
             }
           ]
         },
@@ -6370,6 +6443,16 @@
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "HitsTaken",
+                "+",
+                "1"
               ]
             }
           ]
@@ -6887,6 +6970,17 @@
             "=",
             "10",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "HitCount",
+            "Text",
+            "=",
+            "\"Hits Taken: \" + HitsTaken"
           ]
         }
       ]

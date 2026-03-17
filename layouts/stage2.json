@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2550455473354401,
+    "zoomFactor": 0.9934433498259811,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -352,6 +352,22 @@
       "x": 586,
       "y": -253,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "HitCount",
+      "persistentUuid": "62de7c61-691d-4a41-887e-d7990802ff0b",
+      "width": 0,
+      "x": -635,
+      "y": -470,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1527,6 +1543,50 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "HitCount",
+      "persistentUuid": "fb88f77f-00f8-417e-ad06-bf3a3cb00279",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Hits Taken: 0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 235,
+        "g": 247,
+        "r": 194
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Hits Taken: 0",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 20,
+        "lineHeight": 0,
+        "color": "194;247;235"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1582,6 +1642,9 @@
       },
       {
         "objectName": "FadeOut"
+      },
+      {
+        "objectName": "HitCount"
       }
     ]
   },
@@ -1693,6 +1756,7 @@
       ]
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2406,7 +2470,7 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -2415,7 +2479,7 @@
                 },
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -5808,6 +5872,16 @@
                         "",
                         "\"InvincTimer\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "HitsTaken",
+                        "+",
+                        "1"
+                      ]
                     }
                   ]
                 },
@@ -6617,6 +6691,16 @@
                     "",
                     "\"InvincTimer\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "HitsTaken",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -6699,6 +6783,7 @@
           "comment": "Falling Triangles"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [],
@@ -10697,6 +10782,16 @@
             "Player",
             "\"255;100;100\""
           ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "HitsTaken",
+            "+",
+            "1"
+          ]
         }
       ]
     },
@@ -10811,6 +10906,17 @@
             "=",
             "Player.Health",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "HitCount",
+            "Text",
+            "=",
+            "\"Hits Taken: \" + HitsTaken"
           ]
         }
       ]

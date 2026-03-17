@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6040838749989372,
+    "zoomFactor": 0.689778214010508,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -3973,7 +3973,7 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -3982,7 +3982,7 @@
                 },
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
+                    "value": "KeyFromTextJustPressed"
                   },
                   "parameters": [
                     "",
@@ -5690,11 +5690,10 @@
         },
         {
           "type": {
-            "value": "SetNumberObjectVariable"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "Player",
-            "Hits_Taken",
+            "HitsTaken",
             "+",
             "1"
           ]
@@ -5707,7 +5706,7 @@
             "HitCount",
             "Text",
             "=",
-            "\"Hits Taken: \" + Player.Hits_Taken"
+            "\"Hits Taken: \" + HitsTaken"
           ]
         }
       ]
