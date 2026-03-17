@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47893418845352603,
+    "zoomFactor": 0.8416428125373134,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -99,7 +99,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 579,
+      "height": 1399,
       "keepRatio": true,
       "layer": "",
       "name": "Credit_Text",
@@ -374,7 +374,7 @@
           "parameters": [
             "",
             "moodmode-game-8-bit-on-278083.mp3",
-            "",
+            "yes",
             "20",
             ""
           ]
@@ -393,9 +393,9 @@
             "Credit_Text",
             "Tween",
             "\"CreditsRolling\"",
-            "-500",
+            "-800",
             "\"linear\"",
-            "100",
+            "6",
             ""
           ]
         }
