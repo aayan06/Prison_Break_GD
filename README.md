@@ -34,4 +34,5 @@ by dashing into its head while dodging its attacks.
 
 ## Team
 - Aayan Abdullah — github.com/aayan06
-- [Teammate name] — [their github]
+- Jonathan Mai  — github.com/MaiJonathan
+- Yifei Yang 
